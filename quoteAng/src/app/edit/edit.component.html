@@ -1,0 +1,7 @@
+<a [routerLink]="['/']">Home</a>
+<h3>Add a new quotable author: </h3>
+<p>Name: </p>
+ <input #name type="text" name="name" value="{{author.name}}">
+ <p>{{message}}</p>
+ <button [routerLink]="['/']">Cancel</button>
+ <button (click)="editAuthor(author._id, name.value)">Submit</button>
